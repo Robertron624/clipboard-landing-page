@@ -45,8 +45,6 @@ body {
     transition: filter 0.3s ease-in-out;
 }
 
-
-
 .download-btn:first-of-type {
     background-color: var(--strong-cyan);
 }
@@ -80,20 +78,29 @@ section .section-subtitle{
     padding: 0 1.1rem;
 }
 
+header {
+    background-image: url(/images/bg-header-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 5rem 0px 2rem;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+}
+
 /* --------------------- Main ------------------------ */
 
 main {
     text-align: center;
     padding: 0 1rem;
-    background-image: url(/images/bg-header-mobile.png);
-    background-position: top;
-    background-repeat: no-repeat;
 }
 
 /* A histoyy of everything section */
 
 main section.intro {
-    padding: 8rem 0;
+    padding: 0rem 0rem 8rem;
 }
 
 section.intro .logo {
@@ -278,7 +285,7 @@ footer .social-links .social-link a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    main {
+    header {
         background-image: url(/images/bg-header-desktop.png);
     }
 
