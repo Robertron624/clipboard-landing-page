@@ -42,10 +42,17 @@ body {
     cursor: pointer;
     padding: 1rem 0;
     border: none;
+    transition: filter 0.3s ease-in-out;
 }
+
+
 
 .download-btn:first-of-type {
     background-color: var(--strong-cyan);
+}
+
+.download-btns .download-btn:hover {
+    filter: brightness(1.3);
 }
 
 .download-btn:last-of-type {
@@ -244,10 +251,30 @@ footer .footer-links {
     color: var(--dark-grayish-blue);
 }
 
+footer .footer-links li a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .footer-links li a:hover {
+    color: var(--strong-cyan);
+}
+
 footer .social-links {
     display: flex;
     gap: 2rem;
     justify-content: center;
+    align-items: center;
+}
+
+footer .social-links .social-link a{
+    color: var(--dark-grayish-blue);
+    transition: color 0.3s ease-in-out;
+}
+
+footer .social-links .social-link a:hover {
+    color: var(--strong-cyan);
 }
 
 @media screen and (min-width: 768px) {
@@ -342,9 +369,6 @@ footer .social-links {
     section.apple .download-btns {
         padding: 0 6rem;
         font-size: 2rem;
-    }
-    section.apple .download-btns .download-btn {
-        font-size: 1.5rem;
     }
 
     footer {
