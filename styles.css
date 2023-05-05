@@ -157,7 +157,7 @@ section.supercharge {
 
 section.supercharge .supercharge-text{
     padding: 0 2rem;
-    margin-bottom: 5    rem;
+    margin-bottom: 5rem;
 }
 
 section.supercharge ul.features {
@@ -248,4 +248,121 @@ footer .social-links {
     display: flex;
     gap: 2rem;
     justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        background-image: url(/images/bg-header-desktop.png);
+    }
+
+    .download-btns {
+        flex-direction: row !important;
+    }
+
+    section.intro {
+        max-width: 39rem;
+        margin-inline: auto;
+    }
+
+    .keep-track-text {
+        max-width: 43rem;
+        margin-inline: auto;
+        margin-bottom: 5rem;
+    }
+
+    .keep-track-text .section-title {
+        font-size: 3rem;
+    }
+
+    section.keep-track .image-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7rem;
+    }
+
+    section.keep-track .image-features .features 
+    {
+        text-align: left;
+    }
+
+    section.keep-track .image-features .features {
+        max-width: 22rem;
+    }
+
+    section.keep-track .image-features .features .feature p{
+        padding: 0;
+    }
+
+    section.access-clipboard {
+        padding-bottom: 5rem;
+    }
+
+    section.access-clipboard .access-clipboard-text {
+        max-width: 43rem;
+        margin-inline: auto;
+        margin-bottom: 5rem;
+    }
+
+    .access-clipboard-text .section-title {
+        font-size: 2.5rem;
+    }
+
+    .access-clipboard-img {
+        max-width: 53rem;
+        margin-inline: auto;
+    }
+
+    section.supercharge .supercharge-text h2{
+        font-size: 2.5rem;
+    }
+    section.supercharge .supercharge-text p {
+        font-size: 1.4rem;
+    }
+
+    section.supercharge .features {
+        max-width: 60rem;
+        flex-direction: row !important;
+        margin-inline: auto;
+    }
+
+    section.partners {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.partners ul {
+        flex-direction: row;
+        margin-inline: auto;
+    }
+
+    section.apple {
+        max-width: 53%;
+        margin-inline: auto;
+    }
+    section.apple .download-btns {
+        padding: 0 6rem;
+        font-size: 2rem;
+    }
+    section.apple .download-btns .download-btn {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 7rem 2.5rem;
+        align-items: center;
+    }
+
+    footer .logo-and-links {
+        display: flex;
+        gap: 5rem;
+    }
+
+    footer .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        text-align: left;
+    }
 }
